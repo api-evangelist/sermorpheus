@@ -1,7 +1,25 @@
 aid: sermorpheus
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sermorpheus.png
 name: SerMorpheus
-description: SerMorpheus is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  SerMorpheus was an Indonesian Web3 / digital-collectibles startup surfaced as a portfolio company of
+  500 Global. As of the July 2026 enrichment probe the SerMorpheus brand appears defunct - the
+  sermorpheus.com domain (including the app.sermorpheus.com application host) now 301-redirects to
+  https://normi.es/ (Normies, a distinct Web3 FIAT-settlement payment-infrastructure platform), and no
+  SerMorpheus-branded API, developer portal, documentation, or specification could be located. No API
+  artifacts were generated for this repo to avoid fabricating a surface that no longer exists or
+  conflating SerMorpheus with the unrelated Normies brand now on the domain.
 url: https://raw.githubusercontent.com/api-evangelist/sermorpheus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,7 +29,12 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+x-enrichment-note: >-
+  2026-07-21 probe: DNS for sermorpheus.com / www / app all resolve to 103.30.147.9 (idwebhost.id,
+  Indonesian shared host). HTTPS handshake fails (TLS protocol-version alert) on all hosts. Plain HTTP
+  returns 301 to https://normi.es/ from both the root and the app subdomain. No SerMorpheus API/docs/spec
+  surface exists; nothing enrichable. Not fabricated.
 tags:
 - Company
 apis: []
@@ -23,3 +46,8 @@ maintainers:
 common:
 - type: Website
   url: https://app.sermorpheus.com
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
